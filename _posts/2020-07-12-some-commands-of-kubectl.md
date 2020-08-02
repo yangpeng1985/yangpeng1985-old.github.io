@@ -4,6 +4,9 @@ kubectl的几条命令
 kubectl get pods
 kubetctl get pods -o wide
 kubectl describe pod <pod_name>
+kubectl get node -o wide
+kubectl get service -o wide
+kubectl get namespace -o wide
 kubectl create -f file.yaml # 使用yaml文件创建pod
 kubectl exec nginx-app ps aux
 kubectl logs nginx-app
