@@ -15,6 +15,37 @@
 
 ##  安装kubectl。
 
+### 通过curl命令安装kubectl 可执行文件
+
+> 1. 通过以下命令下载 kubectl 的最新版本：
+>
+>    ```
+>    curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl
+>    ```
+>
+>    若需要下载特定版本的 kubectl，请将上述命令中的 `$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)` 部分替换成为需要下载的 kubectl 的具体版本即可。
+>
+>    例如，如果需要下载 v1.18.0 版本在 macOS 系统上,需要使用如下命令：
+>
+>    ```
+>    curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/darwin/amd64/kubectl
+>    ```
+>
+> 2. 修改所下载的 kubectl 二进制文件为可执行模式。
+>
+>    ```
+>    chmod +x ./kubectl
+>    ```
+>
+> 3. 将 kubectl 可执行文件放置到你的 PATH 目录下。
+>
+>    ```shell
+>    sudo mv ./kubectl /usr/local/bin/kubectl
+>    ```
+>
+
+## 安装hypervisor
+
 可选的hypervisor有HyperKit、VirutalBox、VMware Fusion，因为对VirutalBox比较熟悉，就选择安装了VirtualBox。
 
 macOS安装VirtualBox时，会因为权限问题安装失败，在系统偏好设置中修改配置，允许安装oracle公司的软件，重新安装就可以安装成功了。
