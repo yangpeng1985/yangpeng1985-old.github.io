@@ -60,6 +60,7 @@ macOS安装VirtualBox时，会因为权限问题安装失败，在系统偏好�
 
 以下是安装过程，非常非常慢。
 
+```
 dreamPython@MacBook-Pro killedman.github.io % brew install minikube
 ==> Downloading https://homebrew.bintray.com/bottles/kubernetes-cli-1.18.4.catalina.bottle.tar.gz
 ==> Downloading from https://d29vzk4ow07wi7.cloudfront.net/d2c0b141991b8315eaa1891f4f0f2e485cffd11f3e58954b571839dee492
@@ -126,6 +127,7 @@ Bash completion has been installed to:
 zsh completions have been installed to:
   /usr/local/share/zsh/site-functions
 dreamPython@MacBook-Pro killedman.github.io %
+```
 
 
 
@@ -140,6 +142,7 @@ dreamPython@MacBook-Pro killedman.github.io %
 > minikube start --driver=virtualbox --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
 > ```
 
+```
 dreamPython@MacBook-Pro killedman.github.io % minikube start --driver=virtualbox --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
 😄  Darwin 10.15.5 上的 minikube v1.11.0
 ✨  根据用户配置使用 virtualbox 驱动程序
@@ -169,9 +172,13 @@ host: Running
 kubelet: Running
 apiserver: Running
 kubeconfig: Configured
+```
+
+
 
 ## 启用minikube dashboard
 
+```
 dreamPython@MacBook-Pro killedman.github.io % minikube dashboard
 🔌  正在开启 dashboard ...
 🤔  正在验证 dashboard 运行情况 ...
@@ -186,6 +193,7 @@ dreamPython@MacBook-Pro killedman.github.io % minikube dashboard
 dreamPython@MacBook-Pro killedman.github.io % minikube stop
 ✋  Stopping "minikube" in virtualbox ...
 🛑  Node "minikube" stopped.
+```
 
 
 
