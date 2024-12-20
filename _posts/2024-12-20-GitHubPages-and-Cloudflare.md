@@ -40,6 +40,8 @@ Just hit the + icon in /_posts/ to create new content.
 
 # Cloudflare 部分
 
+这里使用 cloudflare 作为个人博客的 CDN，请求先到Cloudflare。
+
 ## 将域名解析到Cloudflare
 
 你需要将域名的 DNS 解析指向Cloudflare。具体步骤如下：
@@ -78,6 +80,10 @@ Just hit the + icon in /_posts/ to create new content.
 # 在GitHub 中启用自定义域名
 
 在仓库 settings -> Pages -> Custom domain，填写自己的域名（你在Cloudflare中设置的自定义域名），save后可以在代码仓库的CNAME文件看到变化。
+
+# 测试
+
+访问网站的同时，F12打开开发者工具，可以看到Server是cloudflare，说明已经成功了。
 
 # 参考
 
