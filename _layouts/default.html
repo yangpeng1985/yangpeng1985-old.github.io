@@ -13,19 +13,6 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <style>
-      .gcse-searchbox-only {
-        margin-left: 15px; /* 可以根据需要调整 */
-        position: fixed;
-        top: 10px; /* 距离页面顶部的距离 */
-        right: 10px; /* 距离页面右侧的距离 */
-        z-index: 9999; /* 确保悬浮元素在其他内容之上 */
-        background-color: white; /* 搜索框的背景色 */
-        padding: 5px; /* 内边距，使内容不紧贴边框 */
-        border-radius: 5px; /* 圆角效果 */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
-      }
-    </style>
   </head>
 
   <body>
@@ -47,7 +34,7 @@
         </header>
       </div>
     </div>
-    
+    <!-- 添加google搜索代码 begin -->
     <script async src="https://cse.google.com/cse.js?cx=44695ded1ea264b2f">
     </script>
     <div class="gcse-searchbox-only"></div>
@@ -55,6 +42,7 @@
     <script async src="https://cse.google.com/cse.js?cx=44695ded1ea264b2f">
     </script>
     <div class="gcse-searchresults-only"></div>
+    <!-- 添加google搜索代码 end -->
     
     <div id="main" role="main" class="container">
       {{ content }}
