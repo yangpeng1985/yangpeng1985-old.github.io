@@ -2,7 +2,7 @@
 # This file contains configuration flags to customize your site
 #
 
-remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: cotes2020/jekyll-theme-chirpy
 
 # Name of your site (displayed in the header)
 name: DreamPython
@@ -91,3 +91,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+paginate: 5
